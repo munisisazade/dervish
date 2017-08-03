@@ -130,7 +130,7 @@ label beginning:
             "Block of legs and head":
                 pass
         
-        if enemy_defeat > enemy_attack_damage:
+        if enemy_defeat > player_attach_damage or enemy_defeat == player_attach_damage:
             me "Enemy was defeated !"
         else:
             $ player_hit = player_attach_damage - enemy_defeat
@@ -149,7 +149,7 @@ label beginning:
         elif enemy_choice == 'Kich in the legs':
             pass    
         
-        if player_defeat > enemy_attack_damage:
+        if player_defeat > enemy_attack_damage or player_defeat == enemy_attack_damage:
             enemy "You defeated !"
         else:
             $ enemy_hit = enemy_attack_damage - player_defeat 
