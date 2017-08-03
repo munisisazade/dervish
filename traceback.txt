@@ -1,0 +1,27 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 134, in script
+    if enemy_defeat > player_attack:
+  File "game/script.rpy", line 134, in <module>
+    if enemy_defeat > player_attack:
+NameError: name 'player_attack' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 134, in script
+    if enemy_defeat > player_attack:
+  File "/home/munis/Downloads/renpy-6.99.12.4-sdk/renpy/ast.py", line 1656, in execute
+    if renpy.python.py_eval(condition):
+  File "/home/munis/Downloads/renpy-6.99.12.4-sdk/renpy/python.py", line 1749, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/munis/Downloads/renpy-6.99.12.4-sdk/renpy/python.py", line 1743, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 134, in <module>
+    if enemy_defeat > player_attack:
+NameError: name 'player_attack' is not defined
+
+Linux-4.4.0-87-generic-x86_64-with-debian-stretch-sid
+Ren'Py 6.99.12.4.2187
+dervish_alfa 0.5
