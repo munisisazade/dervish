@@ -22,7 +22,7 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "dervish_alfa"
-    config.version = "0.0"
+    config.version = "0.5"
 
     #########################################
     # Themes
@@ -65,12 +65,12 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#D0B4BA",
+        mm_root = "fight_bg.jpg",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#D0B4BA",
+        gm_root = "fight_bg.jpg",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
